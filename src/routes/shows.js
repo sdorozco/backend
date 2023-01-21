@@ -1,5 +1,5 @@
-import express from "express";
-import showSchema from '../models/shows.js'
+const express = require("express");
+const showSchema = require('../models/shows.js');
 
 const router = express.Router();
 // url
@@ -50,4 +50,4 @@ router.get("/shows/:id", (req, res) => {
       .catch((error) => res.json({ message: error }));
   });
   
-export default router;
+module.exports = router

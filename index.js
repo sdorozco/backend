@@ -1,13 +1,13 @@
-import express from 'express'
-import mongoose from 'mongoose'
-import cors from 'cors'
-import async from 'async'
-import request from 'request'
-import Movies from './src/models/movies.js'
-import Tv from './src/models/tv.js'
-import dotenv from 'dotenv'
-import userRoutes from './src/routes/user.js'
-import showRoutes from './src/routes/shows.js'
+const express = require('express')
+const mongoose = require('mongoose')
+const cors = require('cors')
+const async = require('async')
+const request = require('request')
+const Movies = require('./src/models/movies.js')
+const Tv = require('./src/models/tv.js')
+const dotenv = require('dotenv')
+const userRoutes = require('./src/routes/user.js')
+const showRoutes = require('./src/routes/shows.js')
 const app = express()
 app.use(express.json());
 app.use(cors())

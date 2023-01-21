@@ -1,4 +1,6 @@
-import mongoose, { Schema } from 'mongoose'
+const { Schema } = require('mongoose')
+const mongoose = require('mongoose')
+
 
 var showSchema = new Schema(
     {
@@ -15,4 +17,4 @@ var showSchema = new Schema(
     }
 )
 
-export default mongoose.model('shows', showSchema)
+module.exports = mongoose.model('shows', showSchema)

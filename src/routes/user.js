@@ -1,5 +1,5 @@
-import express from "express";
-import userSchema from "../models/user.js";
+const express = require("express");
+const userSchema = require("../models/user.js");
 
 const router = express.Router();
 
@@ -45,4 +45,4 @@ router.delete("/users/:id", (req, res) => {
     .then((data) => res.json(data))
     .catch((error) => res.json({ message: error }));
 });
-export default router;
+module.exports = router
