@@ -1,11 +1,11 @@
 import express from "express";
-import showSchema from './src/models/shows.js'
+import showSchema from '../models/shows.js'
 
 const router = express.Router();
 // url
 const URL = 'http://api.tvmaze.com/shows/';
 //save shows in mongodb
-app.get('/shows/all', (req, res, next) => {
+router.get('/shows/all', (req, res, next) => {
     async.timesLimit(numTvShows, 2, (i, callback) => {
         setTimeout(function () {
             var options = {

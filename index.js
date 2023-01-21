@@ -11,6 +11,7 @@ import showRoutes from './src/routes/shows.js'
 const app = express()
 app.use(express.json());
 app.use(cors())
+const port = process.env.PORT || 5000
 dotenv.config();
 
 const api_key = '?api_key=7be72508776961f3948639fbd796bccd'
@@ -42,6 +43,6 @@ app.get("/movies/:id", (req, res, next) => {
         res.json(movies)
     })
 })
-app.listen(5000, () => {
-    console.log('Server started on port 5000')
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`)
 })
