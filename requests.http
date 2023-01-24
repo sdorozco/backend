@@ -28,4 +28,10 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5000/api/users/63cb1a533ee2ff6e867b291c HTTP/1.1
+DELETE http://localhost:5000/api/users/1 HTTP/1.1
+###
+GET http://localhost:5000/api/shows HTTP/1.1
+###
+GET http://localhost:5000/api/shows/Drama HTTP/1.1
+###
+GET http://api.tvmaze.com/shows/1 HTTP/1.1
