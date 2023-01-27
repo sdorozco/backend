@@ -3,7 +3,7 @@ const request = require("request");
 const showSchema = require("../models/shows.js");
 
 const URL = "http://api.tvmaze.com/shows/";
-const numTvShows = 1000;
+const numTvShows = 50;
 
 const showAll = (req, res, next) => {
   async.timesLimit(numTvShows, 2, (i, callback) => {
